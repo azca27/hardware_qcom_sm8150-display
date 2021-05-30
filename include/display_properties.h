@@ -133,4 +133,6 @@
 #define DISABLE_PARALLEL_CACHE               DISPLAY_PROP("disable_parallel_cache")
 #define ENABLE_FORCE_SPLIT                   DISPLAY_PROP("enable_force_split")
 
+#define SKIP_REFRESH_RATE_CHANGE             DISPLAY_PROP("skip_refresh_rate_change")
+
 #endif  // __DISPLAY_PROPERTIES_H__

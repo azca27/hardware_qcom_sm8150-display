@@ -179,6 +179,7 @@ class DisplayBuiltIn : public DisplayBase, HWEventHandler, DppsPropIntf {
   std::mutex mutable brightness_lock_;
   bool first_cycle_ = true;
   int previous_retire_fence_ = -1;
+  bool skip_refresh_rate_change_ = false;
 };
 
 }  // namespace sdm
