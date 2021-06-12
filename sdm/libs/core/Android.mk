@@ -29,6 +29,9 @@ ifeq ($(ENABLE_HYP),true)
     LOCAL_CFLAGS += -DHYPERVISOR
 endif
 
+TARGET_PANEL_DIMENSION_MULTIPLIER ?= 1
+LOCAL_CFLAGS                  += -DPANEL_DIMENSION_MULTIPLIER=$(TARGET_PANEL_DIMENSION_MULTIPLIER)
+
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 LOCAL_SRC_FILES               := core_interface.cpp \
                                  core_impl.cpp \
